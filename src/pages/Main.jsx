@@ -41,8 +41,8 @@ function Main() {
 
   return (
     <div>
-      <div className="container">
-        <section className="header-container">
+      <section className="header-container">
+        <div className="container">
           <Navbar className="navbar" />
           <div className="header-content-container">
             <div className="cta-anime-wrapper">
@@ -54,11 +54,15 @@ function Main() {
               <button className="btn cta-btn">Book Now</button>
             </div>
           </div>
-          <h2>Scroll Down</h2>
-          <FaAngleDoubleDown className="down-arrow" />
-        </section>
+          <div className="scroll-down-container">
+            <h2>Scroll Down</h2>
+            <FaAngleDoubleDown className="down-arrow" />
+          </div>
+        </div>
+      </section>
 
-        <section className="destinations">
+      <section className="destinations">
+        <div className="container">
           <div className="header-anime-wrapper">
             <h1 id="header-anime">Popular Destinations</h1>
           </div>
@@ -136,9 +140,11 @@ function Main() {
               <button className="card-btn">View Trip</button>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="about-us">
+      <section className="about-us">
+        <div className="container">
           <h1>About Us</h1>
           <div className="about-us-container">
             <div className="about-us-text">
@@ -175,33 +181,48 @@ function Main() {
               />
             </div> */}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="contact-us">
+      <section className="contact-us">
+        <div className="container">
           <div className="contact-us-container">
             <div className="form-container">
               <h1>Contact Us</h1>
               <form className="form">
-                <label htmlFor="fname">First Name</label>
                 <div className="input-wrapper">
-                  <input type="text" id="fname" />
+                  <input
+                    type="text"
+                    id="fname"
+                    placeholder="Enter your first name"
+                  />
                   <FaUserAlt className="input-icon" />
                 </div>
-                <label htmlFor="lname">Last Name</label>
+
                 <div className="input-wrapper">
-                  <input type="text" id="lname" />
+                  <input
+                    type="text"
+                    id="lname"
+                    placeholder="Enter your last name"
+                  />
                   <FaUserAlt className="input-icon" />
                 </div>
-                <label htmlFor="email">Email</label>
+
                 <div className="input-wrapper">
-                  <input type="email" id="email" />
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
                   <FaEnvelope className="input-icon" />
                 </div>
                 <button className="submit-btn">Submit</button>
               </form>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <div className="container">
         <footer className="footer">
           <div className="footer-container">
             <div className="footer-links-container">
