@@ -33,8 +33,7 @@ button:focus {
 }
 
 .container {
-  max-width: 2000px;
-  margin: 0 auto;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -43,6 +42,7 @@ button:focus {
 .nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 2rem;
   height: 4rem;
@@ -106,6 +106,7 @@ button:focus {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
+  background-position: center;
 }
 
 .header-content-container {
@@ -169,7 +170,8 @@ button:focus {
 }
 
 .btn {
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
+  flex: 1;
   width: 300px;
   font-family: inherit;
   text-transform: uppercase;
@@ -211,7 +213,7 @@ button:focus {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  padding: 4rem;
+  margin-top: 4rem;
   color: black;
 }
 
@@ -538,5 +540,62 @@ input:focus {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .menu {
+  }
+
+  .header-content-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10rem;
+  }
+
+  .btn {
+    width: ;
+  }
+
+  .heading-animation {
+    text-align: center;
+    width: 100%;
+  }
+
+  .destinations {
+    padding: 4rem;
+  }
+
+  .destinations h1 {
+    margin-left: 0;
+    font-size: 42px;
+  }
+
+  .destination-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-us-container {
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .stats-container h4 {
+    font-size: 80px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
