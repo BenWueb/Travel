@@ -37,6 +37,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin: 0 auto;
 }
 
 .nav-container {
@@ -100,6 +101,7 @@ button:focus {
 
   height: 100vh;
   width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 2rem;
