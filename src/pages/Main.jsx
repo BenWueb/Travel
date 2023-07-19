@@ -191,29 +191,17 @@ function Main() {
               <h1>Contact Us</h1>
               <form className="form">
                 <div className="input-wrapper">
-                  <input
-                    type="text"
-                    id="fname"
-                    placeholder="Enter your first name"
-                  />
+                  <input type="text" id="fname" placeholder="First Name" />
                   <FaUserAlt className="input-icon" />
                 </div>
 
                 <div className="input-wrapper">
-                  <input
-                    type="text"
-                    id="lname"
-                    placeholder="Enter your last name"
-                  />
+                  <input type="text" id="lname" placeholder="Last Name" />
                   <FaUserAlt className="input-icon" />
                 </div>
 
                 <div className="input-wrapper">
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                  />
+                  <input type="email" id="email" placeholder="Email" />
                   <FaEnvelope className="input-icon" />
                 </div>
                 <button className="submit-btn">Submit</button>
